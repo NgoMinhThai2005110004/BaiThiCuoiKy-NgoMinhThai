@@ -25,7 +25,7 @@ public class HangHoaSTTestdrive {
             System.out.println("Moi nhap lua chon:");
             int lc = sc.nextInt();
             switch(lc)
-            {1
+            {
                 case 0:
                     break;
                 case 1:

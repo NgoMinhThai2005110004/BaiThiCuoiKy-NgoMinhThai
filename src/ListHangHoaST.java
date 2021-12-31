@@ -67,7 +67,7 @@ public class ListHangHoaST {
             }
             node = node.getNext();
         }
-        System.out.println("Xoa Doi Tuong Khong Thanh Cong!");1
+        System.out.println("Xoa Doi Tuong Khong Thanh Cong!");
         return false;
     }
     public boolean SuaThongTin(int id){
