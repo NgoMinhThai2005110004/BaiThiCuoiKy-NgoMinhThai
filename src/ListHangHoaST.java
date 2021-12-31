@@ -52,22 +52,22 @@ public class ListHangHoaST {
         Node node = this.head;
         if(this.head.getHangHoa().getiD() == id){
             this.head = this.head.getNext();
-            System.out.println("Da Xoa Doi Tuong Dau Tien!!");
+            System.out.println("Da Xoa Doi Tuong Thanh Cong");
             return true;
         }
         while(node != null)
         {
             if(node.getNext().getHangHoa().getiD() == id){
                 node.setNext(node.getNext().getNext());
-                System.out.println("Xoa Thanh Cong!!!");
+                System.out.println("Xoa Thanh Cong");
                 return true;
             }
             else{
-                System.out.println("ID Khong Ton Tai!!");
+                System.out.println("ID Khong Ton Tai");
             }
             node = node.getNext();
         }
-        System.out.println("Xoa Khong Thanh Cong!");
+        System.out.println("Xoa Doi Tuong Khong Thanh Cong!");1
         return false;
     }
     public boolean SuaThongTin(int id){
@@ -124,7 +124,7 @@ public class ListHangHoaST {
             while(node != null){
                 node2 = node.next;
                 while(node2 != null){
-                    if(node.hangHoa.giaHang < node2.hangHoa.giaHang){
+                    if(node.hangHoa.giaHang > node2.hangHoa.giaHang){
                         tempHangHoa = node.hangHoa;
                         node.hangHoa = node2.hangHoa;
                         node2.hangHoa = tempHangHoa;
@@ -146,7 +146,7 @@ public class ListHangHoaST {
             while(node != null){
                 node2 = node.next;
                 while(node2 != null){
-                    if(node.hangHoa.giaHang > node2.hangHoa.giaHang){
+                    if(node.hangHoa.giaHang < node2.hangHoa.giaHang){
                         tempHangHoa = node.hangHoa;
                         node.hangHoa = node2.hangHoa;
                         node2.hangHoa = tempHangHoa;
